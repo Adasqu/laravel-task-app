@@ -185,9 +185,9 @@ class TaskController extends Controller
             $event->description = $task->description;
             $event->startDateTime = Carbon::now();
             $event->endDateTime = Carbon::parse($task->due_date);
-            //$event->addAttendee(['email'=>auth()->user()->email]);
+            //$event->addAttendee(['email'=>auth()->user()->email]); // uncoment if is G suite account
 
-            // Zapis wydarzenia w Google Calendar
+
             $event->save();
 
             return redirect()->route('tasks.show', $task)
@@ -197,7 +197,7 @@ class TaskController extends Controller
                 ->with('success', 'Wystąpił błąd i zadanie nie zostało dodane do Google Calendar.');
         }
     }
-    // Wyświetlenie zadania publicznie na podstawie tokenu
+
     public function showPublic($token)
     {
         $task = Task::where('share_token', $token)

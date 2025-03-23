@@ -1,0 +1,9 @@
+- [x] 1. CRUD
+- [x] 2. Przeglądanie zadań
+- [x] 3. Powiadomienia e-mail
+- [x] 4. Walidacja
+- [x] 5. Obsługa wielu użytkowników
+- [x] 6. Udostępnianie zadań bez autoryzacji za pomocą linka z tokenem dostępowym
+- [x] 7. Pełna historia edycji notatek
+- [x] 8. Integracja z Google Calendar (po dodaniu klucza g calendar można dodać zadanie ale trzeba mieć konto g suite więcej https://github.com/spatie/laravel-google-calendar/discussions/210#discussioncomment-789871)
+- [x] . Konfiguracja dockera
