@@ -17,3 +17,7 @@
  - cmd: npm run dev
  - cmd2: php artisan migrate --seed
  - cmd2: php artisan serve
+
+# Strony:
+- Logowanie /login
+- Zarządzanie taskami: /tasks
